@@ -106,20 +106,14 @@ textarea:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
-
 .submit {
   display: inline-block;
-  width: 100%;
-  padding: 12px;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  background-color: #007bff;
+  padding: 10px 20px;
+  background: blue;
   color: white;
-  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
 }
-
 .submit:hover {
   background-color: #0056b3;
   transform: translateY(-2px);
