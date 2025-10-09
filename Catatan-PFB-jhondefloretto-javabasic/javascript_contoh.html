@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+  </head>
+  <body>
+    <h2>Kalkulator Sederhana</h2>
+
+    <p>Angka 1:</p>
+    <input type="number" value="0" id="angka1" />
+
+    <p>Angka 2:</p>
+    <input type="number" value="0" id="angka2" />
+
+    <p>Hasil: <span id="hasil">0</span></p>
+
+    <button onclick="hitung('+')">+</button>
+    <button onclick="hitung('-')">-</button>
+    <button onclick="hitung('*')">×</button>
+    <button onclick="hitung('/')">÷</button>
+
+    <script>
+      function hitung(operasi) {
+        let a = parseFloat(document.getElementById("angka1").value);
+        let b = parseFloat(document.getElementById("angka2").value);
+        let hasil = 0;
+
+        switch (operasi) {
+          case "+":
+            hasil = a + b;
+            break;
+          case "-":
+            hasil = a - b;
+            break;
+          case "*":
+            hasil = a * b;
+            break;
+          case "/":
+            hasil = b !== 0 ? a / b : "Tidak bisa bagi 0";
+            break;
+        }
+
+        document.getElementById("hasil").innerText = hasil;
+      }
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Validasi Nama</title>
+  </head>
+  <body>
+    <form onsubmit="return validasiNama()">
+      <label>Nama:</label>
+      <input type="text" id="nama" placeholder="Masukkan nama" />
+      <button type="submit">Kirim</button>
+    </form>
+
+    <script>
+      function validasiNama() {
+        let nama = document.getElementById("nama").value;
+
+        // Cek apakah panjang nama minimal 3 huruf dan hanya huruf saja
+        let polaHuruf = /^[A-Za-z\s]+$/;
+
+        if (nama.length < 3) {
+          alert("Nama harus memiliki minimal 3 huruf!");
+          return false;
+        } else if (!polaHuruf.test(nama)) {
+          alert("Nama hanya boleh berisi huruf dan spasi!");
+          return false;
+        }
+
+        alert("Nama valid!");
+        return true;
+      }
+    </script>
+  </body>
+</html> -->
