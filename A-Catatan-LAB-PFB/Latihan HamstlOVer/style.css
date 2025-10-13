@@ -1,0 +1,178 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(198, 198, 198);
+}
+
+.navigation-Bar {
+  display: flex;
+  background-color: rgb(116, 116, 244);
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav h1 {
+  color: rgb(253, 253, 117);
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav ul li a:hover {
+  color: rgb(253, 253, 117);
+}
+
+main {
+  background-color: rgb(198, 198, 198);
+}
+
+.banner {
+  background: url(asset/banner.jpg);
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-popup {
+  background-color: rgb(150, 223, 255);
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.register-popup:hover {
+  box-shadow: 10px 10px 10px rgb(150, 150, 255);
+}
+
+.register-now {
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  background-color: rgb(150, 150, 255);
+  border: none;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.register-now:hover {
+  box-shadow: 5px 5px 5px rgb(136, 244, 136);
+}
+
+.register-now a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0px;
+  background-color: rgb(116, 116, 244);
+  color: rgb(253, 253, 117);
+}
+
+.selection-Hamster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamster-card {
+  background-color: white;
+  height: 300px;
+  margin: 10px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.hamster-card:hover {
+  box-shadow: 10px 5px 5px 5px rgb(133, 133, 255);
+}
+
+.hamster-card img {
+  width: 100px;
+  height: 200px;
+  box-shadow: 5px 5px 5px;
+  border-radius: 20px;
+}
+
+.registerform {
+  height: 600px;
+  width: 400px;
+  background-color: white;
+  box-shadow: 5px 5px 5px grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: teal;
+}
+
+.registerform h3 {
+  text-align: center;
+}
+
+.registeration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.Data-Register {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.button {
+  height: 30px;
+  width: 250px;
+  background-color: rgb(150, 150, 255);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.button:hover {
+  box-shadow: 5px 5px 5px rgb(150, 223, 255);
+  color: rgb(136, 244, 136);
+}
+
+.input {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+}

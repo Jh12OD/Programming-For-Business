@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-Bar">
+        <h1>hamstlOVer</h1>
+        <ul>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="registeration">
+      <form id="register-form" class="registerform">
+        <h3>Register to hamstlOVer</h3>
+        <div class="Data-Register">
+          <label>Username</label>
+          <input
+            class="input"
+            type="text"
+            name="Username"
+            id="Username-input"
+            placeholder="Enter username"
+          />
+
+          <label>Username</label>
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="Email-input"
+            placeholder="Enter email"
+          />
+
+          <label>Password</label>
+          <input
+            class="input"
+            type="password"
+            name="Password"
+            id="Password-input"
+            placeholder="Enter password"
+          />
+
+          <label>Confirm Password</label>
+          <input
+            class="input"
+            type="password"
+            name="Confirm-Password"
+            id="Confirm-Password-input"
+            placeholder="Confirm password"
+          />
+
+          <label>Date of Birth</label>
+          <input class="input" type="date" name="DOB" id="DOB-input" />
+
+          <label>Gender</label>
+          <section class="Gender">
+            <label><input type="radio" name="Gender" value="Male" />Male</label>
+            <label
+              ><input type="radio" name="Gender" value="Female" />Female</label
+            >
+          </section>
+
+          <label
+            ><input type="checkbox" name="Terms" id="Terms" />I agree to the
+            Terms and Conditions</label
+          >
+        </div>
+        <button type="submit" class="button">Register Now</button>
+        <p id="errormsg"></p>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>@ 2025 hamstlOVer</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

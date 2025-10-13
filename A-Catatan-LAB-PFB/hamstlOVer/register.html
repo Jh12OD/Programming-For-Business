@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hamstlOVer | Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>🐹 hamstlOVer</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html" class="active">Register</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Daftar Akun Baru</h2>
+        <form id="registerForm">
+          <label>Username</label>
+          <input type="text" id="username" placeholder="Minimal 4 karakter" />
+
+          <label>Email</label>
+          <input type="text" id="email" placeholder="contoh: user@mail.com" />
+
+          <label>Password</label>
+          <input type="password" id="password" />
+
+          <label>Konfirmasi Password</label>
+          <input type="password" id="confirmPassword" />
+
+          <label>Tanggal Lahir</label>
+          <input type="date" id="dob" />
+
+          <label>Gender</label>
+          <div class="gender">
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+          </div>
+          <div class="terms">
+            <input type="checkbox" id="terms" /> Saya setuju dengan Syarat &
+            Ketentuan
+          </div>
+
+          <button type="submit">Daftar</button>
+        </form>
+        <p id="errorMsg"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 hamstlOVer</p>
+    </footer>
+  </body>
+</html>

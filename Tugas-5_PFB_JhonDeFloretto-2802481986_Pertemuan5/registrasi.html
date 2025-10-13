@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="registration-form" id="registrationForm">
+        <h2>Registration Form</h2>
+
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input class="input-text" type="text" name="fullName" id="fullName" />
+          <span class="error-message" id="fullNameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input class="input-text" type="email" name="email" id="email" />
+          <span class="error-message" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            class="input-text"
+            type="password"
+            name="password"
+            id="password"
+          />
+          <span class="error-message" id="passwordError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            class="input-text"
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
+          <span class="error-message" id="confirmPasswordError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number:</label>
+          <input
+            class="input-text"
+            type="tel"
+            name="phoneNumber"
+            id="phoneNumber"
+          />
+          <span class="error-message" id="phoneNumberError"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="gender" value="male" />
+              Male
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="female" />
+              Female
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="other" />
+              Other
+            </label>
+          </div>
+          <span class="error-message" id="genderError"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Hobbies/Interests:</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="hobbies" value="reading" />
+              Reading
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hobbies" value="coding" />
+              Coding
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hobbies" value="swimming" />
+              Swimming
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hobbies" value="writing" />
+              Writing
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="hobbies" value="gaming" />
+              Gaming
+            </label>
+          </div>
+          <span class="error-message" id="hobbiesError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select class="select" name="country" id="country">
+            <option value="">Select Country</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="germany">Germany</option>
+            <option value="japan">Japan</option>
+            <option value="indonesia">Indonesia</option>
+          </select>
+          <span class="error-message" id="countryError"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
